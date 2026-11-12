@@ -28,7 +28,7 @@ ssh "$HOST" "set -e; cd $DIR
     --build-arg NEXT_PUBLIC_SMS_ENABLED=${NEXT_PUBLIC_SMS_ENABLED:-false} \
     --build-arg NEXT_PUBLIC_TEST_OTP=${NEXT_PUBLIC_TEST_OTP:-123456} \
     --build-arg NEXT_PUBLIC_API=${NEXT_PUBLIC_API:-real} \
-    --build-arg API_ORIGIN=${API_ORIGIN:-https://lab.tcell.tj} . >/dev/null"
+    --build-arg API_ORIGIN=${API_ORIGIN:-http://46.8.71.194:8000} . >/dev/null"
 
 echo "▸ Перезапуск контейнера ($BIND)"
 ssh "$HOST" "set -e

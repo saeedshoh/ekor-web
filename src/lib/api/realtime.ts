@@ -15,7 +15,7 @@ export type RtEvent =
   | { type: 'notification'; notification_id: number; role: 'client' | 'master' }
   | { type: 'reconnected' };
 
-const WS_URL = process.env.NEXT_PUBLIC_WS_URL || 'wss://lab.tcell.tj/api/ws';
+const WS_URL = process.env.NEXT_PUBLIC_WS_URL || 'ws://46.8.71.194:8000/api/ws';
 const subs = new Set<(e: RtEvent) => void>();
 let ws: WebSocket | null = null;
 let ping: ReturnType<typeof setInterval> | undefined;

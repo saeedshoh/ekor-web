@@ -2,7 +2,7 @@
  * HTTP-клиент бэкенда. В браузере ходим на свой домен (/api проксирует Next, см. next.config.ts) —
  * CORS не нужен; на сервере — напрямую в API_ORIGIN.
  */
-export const API_ORIGIN = process.env.API_ORIGIN || 'https://lab.tcell.tj';
+export const API_ORIGIN = process.env.API_ORIGIN || 'http://46.8.71.194:8000';
 const BASE = typeof window === 'undefined' ? `${API_ORIGIN}/api` : '/api';
 const TOKENS = 'ekor_tokens';
 

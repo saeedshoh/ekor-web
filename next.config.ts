@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   // Браузер ходит на /api своего домена, Next проксирует в бэкенд — CORS не нужен
   async rewrites() {
-    return [{ source: '/api/:path*', destination: `${process.env.API_ORIGIN || 'https://lab.tcell.tj'}/api/:path*` }];
+    return [{ source: '/api/:path*', destination: `${process.env.API_ORIGIN || 'http://46.8.71.194:8000'}/api/:path*` }];
   },
 };
 

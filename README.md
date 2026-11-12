@@ -9,13 +9,13 @@ npm run typecheck
 ```
 
 ## Бэкенд
-Данные — с API https://lab.tcell.tj/api (`/api/docs`, WebSocket — `/api/ws-docs`). Источник выбирается при сборке:
+Данные — с API http://46.8.71.194:8000/api (`/api/docs`, WebSocket — `/api/ws-docs`). Источник выбирается при сборке:
 
 | Переменная | Значение |
 |---|---|
 | `NEXT_PUBLIC_API` | `real` — бэкенд, `mock` (по умолчанию) — встроенные моки |
-| `API_ORIGIN` | адрес бэкенда, по умолчанию `https://lab.tcell.tj` |
-| `NEXT_PUBLIC_WS_URL` | WebSocket, по умолчанию `wss://lab.tcell.tj/api/ws` |
+| `API_ORIGIN` | адрес бэкенда, по умолчанию `http://46.8.71.194:8000` |
+| `NEXT_PUBLIC_WS_URL` | WebSocket, по умолчанию `ws://46.8.71.194:8000/api/ws` |
 
 ```bash
 NEXT_PUBLIC_API=real npm run dev
